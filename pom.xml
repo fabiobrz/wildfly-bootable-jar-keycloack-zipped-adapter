@@ -28,11 +28,13 @@
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-jar-maven-plugin</artifactId>
-                <version>4.0.0.Final</version>
+                <version>4.0.3.Final-redhat-00001</version>
                 <configuration>
                     <feature-packs>
                         <feature-pack>
-                            <location>wildfly@maven(org.jboss.universe:community-universe)#23.0.0.Final</location>
+                                <groupId>org.jboss.eap</groupId>
+                                <artifactId>wildfly-galleon-pack</artifactId>
+                                <version>3.0.0.GA-redhat-00003</version>
                             <included-packages>
                                 <package>org.bouncycastle</package>
                                 <package>com.fasterxml.jackson.core.jackson-annotations</package>
